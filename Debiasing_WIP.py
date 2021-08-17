@@ -54,7 +54,7 @@ pca.fit(df)
 print(pca.explained_variance_ratio_)
 g=pca.components_[0]
 g=g / np.linalg.norm(g)
-direct_bias=0
+
 
 #Pairs of labels that are supposed to be gender-neutral for this application
 pair0 = processor(text=["rich", "poor"], images=image, return_tensors="pt", padding=True)
